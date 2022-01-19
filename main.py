@@ -1,7 +1,7 @@
 from CuentaBancaria import CuentaBancaria
 
-cuenta1 = CuentaBancaria(100, 0.01)
-cuenta2 = CuentaBancaria(50, 0.01)
+cuenta1 = CuentaBancaria(100, 0.01, "cta001")
+cuenta2 = CuentaBancaria(10, 0.01, "cta002")
 
 cuenta1.mostrar_info_cuenta()
 cuenta2.mostrar_info_cuenta()
@@ -14,4 +14,4 @@ cuenta1.deposito(50).deposito(100).deposito(10).retiro(120).generar_interes().mo
 cuenta2.deposito(20).deposito(40).retiro(10).retiro(20).retiro(30).retiro(20).generar_interes().mostrar_info_cuenta()
 
 #Bonus
-# CuentaBancaria.informacion_global()
+CuentaBancaria.informacion_global()
